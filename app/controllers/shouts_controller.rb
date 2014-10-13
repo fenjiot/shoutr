@@ -3,7 +3,7 @@ class ShoutsController < ApplicationController
 
   def index
     @shout = Shout.new
-    @shouts = Shout.all
+    @shouts = Shout.all.order("created_at DESC")
   end
 
   def create
@@ -15,6 +15,6 @@ class ShoutsController < ApplicationController
   private
 
   def shout_params
-    params.require(:shout).premit(:body)
+    params.require(:shout).permit(:body)
   end
 end
