@@ -1,5 +1,6 @@
 body {
-  background: #353535;
+  background: #131313;
+  color: #D0D0D0;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
@@ -16,9 +17,10 @@ a[href] {
   display: inline-block;
   background-color: #CBEEFA;
   text-decoration: none;
+  border: 0px #E6E6E6;
 
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(66, 184, 221);
+  background: #BCDCE8;
 }
