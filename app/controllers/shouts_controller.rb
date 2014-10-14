@@ -4,7 +4,6 @@ class ShoutsController < ApplicationController
   def index
     @shout = Shout.new
     @timeline = current_user.timeline
-    @following_relationship = FollowingRelationship.new
   end
 
   def create

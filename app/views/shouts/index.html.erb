@@ -7,10 +7,5 @@
 
 <h4>Your Feed</h4>
 <ul>
-  <% @timeline.each do |shout| %>
-    <li>
-      <%= shout.user.email %>:
-      <%= shout.body %>
-    </li>
-  <% end %>
+  <%= render @timeline %>
 </ul>
