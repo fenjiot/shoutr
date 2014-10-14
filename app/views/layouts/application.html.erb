@@ -8,12 +8,23 @@
 </head>
 <body>
 
-  <% if signed_in? %>
-    <%= button_to "Sign out", session_path, method: :delete %>
-  <% else %>
-    <%= link_to "Sign in", new_session_path %>
-    <%= link_to "Sign up", new_user_path %>
-  <% end %>
+  <header class="session">
+    <% if signed_in? %>
+      <p>Currently signed in as: <%= current_user.email %></p>
+      <%= button_to "Sign out", session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Sign in", new_session_path %>
+      <%= link_to "Sign up", new_user_path %>
+    <% end %>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <%= link_to "Users", users_path %>
+      </li>
+    </ul>
+  </nav>
 
 <%= yield %>
 

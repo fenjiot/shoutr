@@ -1,0 +1,23 @@
+body {
+  background: #353535;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+ul li { list-style-type: none; }
+
+a:link, a:visited, a:hover, a:active { color: #84CC84; text-decoration: none; }
+
+a[href] {
+  border-bottom: 1px solid #CBEEFA;
+  box-shadow: inset 0 -2px 0 #CBEEFA; 
+}
+
+.button_to {
+  display: inline-block;
+  background-color: #CBEEFA;
+
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(66, 184, 221);
+}
