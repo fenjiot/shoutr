@@ -20,6 +20,11 @@ class UsersController < ApplicationController
     @users = User.where.not(id: current_user.id)
   end
 
+  def show
+    @user = User.find(params[:id])
+    @followed_users = @user.followed_users
+  end
+
   private
 
   def user_params
