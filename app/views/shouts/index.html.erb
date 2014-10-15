@@ -2,8 +2,14 @@
 
 <%= form_for @text_subject do |form| %>
   <%= form.text_field :body %>
-  <%= form.submit "SHOUT!" %>
+  <%= form.submit "SHOUT! WORDS" %>
 <% end %>
+
+<%= form_for @image_subject do |form| %>
+  <%= form.text_field :url %>
+  <%= form.submit "PIX SHOUT!" %>
+<% end %>
+
 
 <h4>Your Feed</h4>
 <ul>

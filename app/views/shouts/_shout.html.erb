@@ -3,5 +3,5 @@
     <%= shout.user.email %>
   </span>
   (<%= time_ago_in_words shout.created_at %> ago):
-  <%= shout.subject.body %>
+  <%= render shout.subject %>
 </li>
