@@ -10,5 +10,7 @@ Rails.application.routes.draw do
 
   resources :shouts, only: [:index]
 
+  resources :followers, only: [:index]
+
   root "shouts#index"
 end
