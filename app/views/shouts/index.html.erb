@@ -10,8 +10,8 @@
   <%= form.submit "PIX SHOUT!" %>
 <% end %>
 
-
 <h4>Your Feed</h4>
 <ul>
   <%= render @timeline %>
+  <%= paginate @timeline %>
 </ul>
