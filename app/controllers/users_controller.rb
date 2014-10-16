@@ -21,14 +21,14 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    @user = User.find_by_username(params[:username])
     @followed_users = @user.followed_users
   end
 
   private
 
   def user_params
-    params.require(:user).permit(:email, :password)
+    params.require(:user).permit(:username, :email, :password)
   end
 end
 

@@ -32,4 +32,8 @@ class User < ActiveRecord::Base
     timeline_user_ids = followed_user_ids + [id]
     Shout.where(user_id: timeline_user_ids).order(created_at: :desc).limit(20)
   end
+
+  def to_param
+    username
+  end
 end
