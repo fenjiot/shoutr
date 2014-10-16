@@ -29,6 +29,12 @@
       <li>
         <%= link_to "Followers", followers_path %>
       </li>
+      <li>
+        <%= form_tag :search, method: :get do %>
+          <%= text_field_tag :query %>
+          <%= submit_tag "SEARCH" %>
+        <% end %>
+      </li>
     </ul>
   </nav>
 
