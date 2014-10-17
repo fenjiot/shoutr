@@ -1,6 +1,6 @@
 <li>
   <span class="strong">
-    <%= shout.user.email %>
+    <%= avatar(shout.user.email) %>
   </span>
   (<%= time_ago_in_words shout.created_at %> ago):
   <%= render shout.subject %>

@@ -27,7 +27,8 @@ module CustomHelper
     end
   end
 
-  def avatar
-  end
+  def avatar email
+    hashed_email = Digest::MD5.hexdigest(email)
+    image_tag "http://www.gravatar.com/avatar/#{hashed_email}"
   end
 end
